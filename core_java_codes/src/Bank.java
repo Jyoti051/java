@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.IO./;
 
 class Bank1
 {
@@ -8,19 +8,19 @@ class Bank1
 	private long balance;
 	static private long bankbalance;
 	Scanner kb = new Scanner(System.in);
-	
+	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 
 void account()
 {
 	System.out.println("enter the account no");
-	acno = kb.nextInt();
+	acno =Integer.parseInt( br.readLine());
 	
 	System.out.println("eneter the name of customer");
-	name = kb.next();
+	name = br.readLine();
 	
 	System.out.println("enter the balance");
-	balance = kb.nextLong();
+	balance = Integer.parseInt( br.readLine());
 	
 	bankbalance = balance + bankbalance;
 }
