@@ -94,5 +94,6 @@ public class PolyOfStudent {
 		
 		
 	}
+	s.close();
 
 }
