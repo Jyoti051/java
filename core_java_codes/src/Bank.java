@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.IO./;
 
-class Bank1
+class Bank1  //bank pojo
 {
 	private int acno;
 	private String name;
@@ -11,7 +11,7 @@ class Bank1
 	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 
-void account()
+void account() //main method
 {
 	System.out.println("enter the account no");
 	acno =Integer.parseInt( br.readLine());
